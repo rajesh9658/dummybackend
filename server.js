@@ -17,6 +17,7 @@ app.use("/api/weekly-schedule", scheduleRoutes);
 app.use("/api/special-events", specialEventsRoutes);
 app.use("/api/events", eventsRoutes);
 app.use("/api/about-us", require("./routes/aboutRoutes"));
+app.use("/api/langar-menu", require("./routes/langarMenuRoutes"));
 
 
 // Root check
