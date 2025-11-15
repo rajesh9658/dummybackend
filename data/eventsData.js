@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:5000/images/";
+const BASE_URL = "https://ssfc-backend.onrender.com/images/";
 
 const eventsData =
 //eventsData.js
