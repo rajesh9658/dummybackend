@@ -18,6 +18,7 @@ app.use("/api/special-events", specialEventsRoutes);
 app.use("/api/events", eventsRoutes);
 app.use("/api/about-us", require("./routes/aboutRoutes"));
 app.use("/api/langar-menu", require("./routes/langarMenuRoutes"));
+app.use("/api/live", require("./routes/liveRoutes"));
 
 
 // Root check
