@@ -4,6 +4,7 @@ const cors = require("cors");
 const scheduleRoutes = require("./routes/scheduleRoutes");
 const specialEventsRoutes = require("./routes/specialEventsRoutes");
 const eventsRoutes = require("./routes/eventsRoutes");
+const notificationsRoute = require("./routes/notifications");
 
 const app = express();
 app.use(cors());
@@ -19,6 +20,7 @@ app.use("/api/events", eventsRoutes);
 app.use("/api/about-us", require("./routes/aboutRoutes"));
 app.use("/api/langar-menu", require("./routes/langarMenuRoutes"));
 app.use("/api/live", require("./routes/liveRoutes"));
+app.use("/api/notifications", notificationsRoute);
 
 
 // Root check
