@@ -5,7 +5,7 @@ const scheduleRoutes = require("./routes/scheduleRoutes");
 const specialEventsRoutes = require("./routes/specialEventsRoutes");
 const eventsRoutes = require("./routes/eventsRoutes");
 const notificationsRoute = require("./routes/notifications");
-
+const contactRoute = require("./routes/contact");
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -21,7 +21,7 @@ app.use("/api/about-us", require("./routes/aboutRoutes"));
 app.use("/api/langar-menu", require("./routes/langarMenuRoutes"));
 app.use("/api/live", require("./routes/liveRoutes"));
 app.use("/api/notifications", notificationsRoute);
-
+app.use("/api", contactRoute);
 
 // Root check
 app.get("/", (req, res) => {
