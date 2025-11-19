@@ -1,6 +1,7 @@
-import express from "express";
-import { mailTransporter } from "../config/mail.js";
-import dotenv from "dotenv";
+// contact.js
+const {express} = require("express");
+const {mailTransporter} = require("../config/mail");
+const {dotenv} = require("dotenv");
 dotenv.config();
 
 const router = express.Router();
